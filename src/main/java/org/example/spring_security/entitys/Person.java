@@ -1,11 +1,12 @@
 package org.example.spring_security.entitys;
 
-import com.example.orm.entitys.enums.Gender;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.spring_security.entitys.enums.Gender;
 
 @Builder
 @Data

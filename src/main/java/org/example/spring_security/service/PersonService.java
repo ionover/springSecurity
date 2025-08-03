@@ -1,8 +1,8 @@
 package org.example.spring_security.service;
 
-import com.example.orm.entitys.Person;
-import com.example.orm.repositories.PersonRepository;
 import lombok.RequiredArgsConstructor;
+import org.example.spring_security.entitys.Person;
+import org.example.spring_security.repositories.PersonRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

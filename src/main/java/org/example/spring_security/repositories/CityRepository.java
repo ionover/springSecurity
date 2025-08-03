@@ -1,6 +1,7 @@
 package org.example.spring_security.repositories;
 
-import com.example.orm.entitys.City;
+
+import org.example.spring_security.entitys.City;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
