@@ -16,17 +16,16 @@ public class WebSecurityConfigurerAdapterImpl {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http
-                .authorizeHttpRequests(authz -> authz
-                        .requestMatchers("/cities").permitAll()
-                        .anyRequest().authenticated()
-                )
-                .formLogin(form -> form
-                        .defaultSuccessUrl("/persons", true)
-                        .permitAll()
-                )
-                .logout(logout -> logout.permitAll())
-                .csrf(csrf -> csrf.disable());
+        http.authorizeHttpRequests(authz -> authz
+                    .requestMatchers("/cities").permitAll()
+                    .anyRequest().authenticated()
+            )
+            .formLogin(form -> form
+                    .defaultSuccessUrl("/persons", true)
+                    .permitAll()
+            )
+            .logout(logout -> logout.permitAll())
+            .csrf(csrf -> csrf.disable());
 
         return http.build();
     }
